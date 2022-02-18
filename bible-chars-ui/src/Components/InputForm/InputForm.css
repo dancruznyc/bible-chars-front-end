@@ -31,4 +31,9 @@ textarea {
   border: none;
   border-bottom: 1px solid black;
   height: 4rem;
+  outline: none;
 }
+
+/* textarea:focus:placeholder-shown {
+  color: transparent;
+} */

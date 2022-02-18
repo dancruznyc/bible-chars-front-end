@@ -8,7 +8,8 @@ export default function InputForm(props) {
     lessons: "",
     image: "",
   });
-  function addChar() {
+  function addChar(e) {
+    e.preventDefault();
     console.log(newChar);
     fetch("http://localhost:5000/characters", {
       method: "POST",
@@ -19,9 +20,10 @@ export default function InputForm(props) {
     })
       .then((res) => res.json())
       .then((res) => props.getData());
+    setNewChar({ name: "", time: "", lessons: "", image: "" });
   }
   return (
-    <div className="input-form">
+    <form className="input-form" onSubmit={(e) => addChar(e)}>
       <input
         type="text"
         placeholder="name"
@@ -45,7 +47,7 @@ export default function InputForm(props) {
         onChange={(e) => setNewChar({ ...newChar, lessons: e.target.value })}
         value={newChar.lessons}
       ></textarea>
-      <input type="submit" onClick={() => addChar()}></input>
-    </div>
+      <input type="submit"></input>
+    </form>
   );
 }

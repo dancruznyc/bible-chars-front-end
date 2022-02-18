@@ -37,3 +37,6 @@ textarea {
 /* textarea:focus:placeholder-shown {
   color: transparent;
 } */
+
+/*PGPASSWORD=postgres pg_dump -f data_dump -U postgres --no-owner biblechar*/
+/*psql -h bible-characters-instance-1.c0h5bfchu7oa.us-east-1.rds.amazonaws.com -p 5432 -U postgres*/

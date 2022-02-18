@@ -1,0 +1,34 @@
+.input-form {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+}
+
+.input-form input {
+  height: 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.input-form input:focus {
+  outline: none;
+}
+
+.input-form input[type="submit"] {
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+.input-form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: slategray;
+  color: whitesmoke;
+}
+
+textarea {
+  font-size: 1.1rem;
+  border: none;
+  border-bottom: 1px solid black;
+  height: 4rem;
+}

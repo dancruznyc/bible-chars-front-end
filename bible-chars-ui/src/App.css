@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #adc5cf,
+    #b2cbd3,
+    #b8d1d7,
+    #bed7db,
+    #c4dddf
+  );
+}
+
+h1 {
+  font-family: "Balsamiq Sans";
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
